@@ -1,0 +1,7 @@
+dtb: dtb/
+ramdisk: ramdisk/
+header version: 4
+os_version: 15.0.0
+os_patch_level: 2026-04
+pagesize: 4096
+cmdline: ''
