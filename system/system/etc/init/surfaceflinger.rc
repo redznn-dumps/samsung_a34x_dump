@@ -1,0 +1,14 @@
+service surfaceflinger /system/bin/surfaceflinger
+    class core animation
+    user system
+    group graphics drmrpc readproc
+    capabilities SYS_NICE
+    onrestart restart --only-if-running zygote
+    task_profiles HighPerformance GpisSfCpusetJoin
+
+on property:vendor.debug.sf.restart=1
+     restart surfaceflinger
+
+# SEC_GC_CMN_LAYER_DUMP
+on boot
+    mkdir /data/log/SF_Dump 0771 system graphics
