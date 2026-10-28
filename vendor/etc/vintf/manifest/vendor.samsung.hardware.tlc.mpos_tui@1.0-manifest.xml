@@ -1,0 +1,11 @@
+<!--
+    Input:
+        vendor/samsung/interfaces/tlc/mpos_tui/1.0/default/vendor.samsung.hardware.tlc.mpos_tui@1.0-manifest.xml
+-->
+<manifest version="8.0" type="device">
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.tlc.mpos_tui</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ISehMposTui/default</fqname>
+    </hal>
+</manifest>

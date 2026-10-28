@@ -1,0 +1,11 @@
+<!--
+    Input:
+        vendor/samsung/interfaces/tlc/kg/2.0/aidl/default/vendor.samsung.hardware.tlc.kg-manifest.xml
+-->
+<manifest version="8.0" type="device">
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.tlc.kg</name>
+        <version>2</version>
+        <fqname>ISehKg/default</fqname>
+    </hal>
+</manifest>

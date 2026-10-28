@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/samsung/interfaces/security/fkeymaster/aidl/default/vendor.samsung.hardware.security.fkeymaster-service.xml
+-->
+<manifest version="8.0" type="device">
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.security.fkeymaster</name>
+        <fqname>ISehFkeymaster/default</fqname>
+    </hal>
+</manifest>

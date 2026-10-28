@@ -1,0 +1,9 @@
+service WiFiFWLogger /vendor/bin/WiFiFWLogger
+    class main
+    user system
+    group system wifi
+    disabled
+
+on property:vendor.connsys.driver.ready=yes && property:ro.boot.debug_level=0x4f4c
+    start WiFiFWLogger
+

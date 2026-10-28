@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/samsung/interfaces/security/wsm/service/aidl/1/vendor.samsung.hardware.security.wsm.service-manifest.xml
+-->
+<manifest version="8.0" type="device">
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.security.wsm.service</name>
+        <fqname>ISehWsm/default</fqname>
+    </hal>
+</manifest>

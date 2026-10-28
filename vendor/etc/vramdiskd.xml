@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<records>
+<boot_file>/system/priv-app/TouchWizHome_2017/TouchWizHome_2017.apk</boot_file>
+<boot_file>/system/framework/oat/arm64/services.odex</boot_file>
+<boot_file>/vendor/lib64/egl/libGLES_mali.so</boot_file>
+<boot_file>/system/bin/surfaceflinger</boot_file>
+<boot_file>/system/lib64/libdmabufheap.so</boot_file>
+<boot_file>/system_ext/lib64/libgralloc_extra_sys.so</boot_file>
+</records>

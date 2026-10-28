@@ -1,0 +1,61 @@
+#line 1 "system/sepolicy/flagging/flagging_macros"
+####################################
+# is_flag_enabled(flag, rules)
+# SELinux rules which apply only if given feature is turned on
+
+
+####################################
+# is_flag_disabled(flag, rules)
+# SELinux rules which apply only if given feature is turned off
+
+
+####################################
+# starting_at_board_api(api_level, rules)
+#
+# This macro conditionally exposes SELinux rules within system/sepolicy/public,
+# ensuring they are available to vendors only when the board API level is at or
+# above the specified 'api_level'.
+#
+# * Platform sepolicy: Rules are always enabled, regardless of API level.
+# * Vendor sepolicy: Rules are enabled only when the board API level meets or
+#                    exceeds the value provided in 'api_level'.
+#
+# Apply this macro to public types and attributes (in system/sepolicy/public) to
+# restrict vendor access based on board API level.
+
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/vndservice_contexts/android_common/a34x/newline"
+
+#line 1 "system/sepolicy/vendor/vndservice_contexts"
+manager                 u:object_r:service_manager_vndservice:s0
+*                       u:object_r:default_android_vndservice:s0
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/vndservice_contexts/android_common/a34x/newline"
+
+#line 1 "device/mediatek/sepolicy/base/vendor/vndservice_contexts"
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+android.IRemosaicDaemon u:object_r:remosaic_daemon_service:s0
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/vndservice_contexts/android_common/a34x/newline"
+
+#line 1 "vendor/samsung/system/sepolicy/samsung/vndservice_contexts"
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/O_treble_review_request/view/22594847/?search_target=author&search_keyword=%25EC%25A0%2595%25EB%25AF%25BC%25EC%25B2%25A0&page=1
+WlanDutService                              u:object_r:wlandutservice_vndservice:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-979
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/O_review_request/view/22893686
+android.samsung.IRemosaicDaemon             u:object_r:remosaicd_vndservice:s0
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-1584
+#SEC_DUPLICATED: android.IRemosaicDaemon                     u:object_r:remosaicd_vndservice:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-1346
+SccHalAudioContext             u:object_r:SccHalAudio_service:s0
+SccHalSoundTriggerContext             u:object_r:SccHalAudio_service:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-4303
+EngineeringModeService                      u:object_r:EngineeringMode_vndservice:s0
+
+# https://jira-mx.sec.samsung.net/browse/SEANDROID-12752
+RTTSservice                      u:object_r:RTTS_vndservice:s0
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/vndservice_contexts/android_common/a34x/newline"
+

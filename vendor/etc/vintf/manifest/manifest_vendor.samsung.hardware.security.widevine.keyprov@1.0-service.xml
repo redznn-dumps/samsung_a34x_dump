@@ -1,0 +1,11 @@
+<!--
+    Input:
+        vendor/samsung/hal-server/widevine/keyprov/1.0/default/manifest_vendor.samsung.hardware.security.widevine.keyprov@1.0-service.xml
+-->
+<manifest version="8.0" type="device">
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.security.widevine.keyprov</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ISehWidevineKeyProvisioning/default</fqname>
+    </hal>
+</manifest>

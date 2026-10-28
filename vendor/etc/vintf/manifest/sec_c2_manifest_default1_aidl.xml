@@ -1,0 +1,11 @@
+<!--
+    Input:
+        vendor/samsung/frameworks/avcodec/mm_proprietary/libscodec2/sec_registrant/sec_c2_manifest_default1_aidl.xml
+-->
+<manifest version="8.0" type="device">
+    <hal format="aidl" override="true">
+        <name>android.hardware.media.c2</name>
+        <fqname>IComponentStore/default</fqname>
+        <fqname>IComponentStore/default1</fqname>
+    </hal>
+</manifest>

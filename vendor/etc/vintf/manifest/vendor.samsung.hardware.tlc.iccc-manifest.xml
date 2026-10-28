@@ -1,0 +1,11 @@
+<!--
+    Input:
+        vendor/samsung/interfaces/tlc/iccc/aidl/default/vendor.samsung.hardware.tlc.iccc-manifest.xml
+-->
+<manifest version="8.0" type="device">
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.tlc.iccc</name>
+        <version>3</version>
+        <fqname>ISehIccc/default</fqname>
+    </hal>
+</manifest>

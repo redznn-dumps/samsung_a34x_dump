@@ -1,0 +1,9 @@
+{
+	"version_id": "v8",
+	"tag" : "8.4.4",
+	"model_type" : "gpu",
+	"precision" : "float16",
+	"complier" : "snpcpugpu",
+	"latency": "0",
+	"model_path" : "/vendor/etc/saiv/image_understanding/db/aic_detector/aic_detector_cnn.tflite"
+}

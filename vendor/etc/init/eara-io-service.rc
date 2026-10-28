@@ -1,0 +1,12 @@
+#on post-fs-data
+#    mkdir /data/vendor/eara_io 0770 system system
+#    chown system system /proc/blocktag/eara_io_boost
+#    chmod 666 /sys/devices/platform/soc/16810000.ufshci/clkscale/clkscale_control
+#    chown system system /sys/devices/platform/soc/16810000.ufshci/clkscale/clkscale_control
+#    chmod 666 /sys/devices/platform/soc/112b0000.ufshci/clkscale/clkscale_control
+#    chown system system /sys/devices/platform/soc/112b0000.ufshci/clkscale/clkscale_control
+#
+#service eara-io /vendor/bin/eara_io_service
+#    class main
+#    user root
+#    group system

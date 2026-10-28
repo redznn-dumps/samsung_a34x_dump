@@ -1,0 +1,10 @@
+on post-fs-data
+    mkdir /data/vendor/disp_pq 0777 system system
+on boot
+    start vender.mediatek.hardware.pq_aidl-default
+service vender.mediatek.hardware.pq_aidl-default /vendor/bin/hw/vendor.mediatek.hardware.pq_aidl-service
+    interface aidl vendor.mediatek.hardware.pq_aidl-service
+    class core animation
+    user system
+    group system graphics
+    capabilities SYS_NICE

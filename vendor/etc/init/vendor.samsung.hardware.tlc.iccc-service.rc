@@ -1,0 +1,9 @@
+service icccserv /vendor/bin/hw/vendor.samsung.hardware.tlc.iccc-service
+    interface aidl vendor.samsung.hardware.tlc.iccc.ISehIccc/default
+#    interface aidl vendor.samsung.hardware.tlc.iccc.ISehIcccTestTeegris/default
+#    interface aidl vendor.samsung.hardware.tlc.iccc.ISehIcccTestQtee/default
+    class hal
+    user system
+    group system
+    oneshot
+    disabled

@@ -1,0 +1,259 @@
+<!--
+    Input:
+        device/mediatek/vendor/common/project_manifest/manifest_isphal.xml
+        device/mediatek/vendor/common/project_manifest/manifest_audio.xml
+        device/mediatek/vendor/common/project_manifest/manifest_dsds.xml
+        device/mediatek/vendor/common/project_manifest/manifest_radioconfig.xml
+        device/mediatek/vendor/common/project_manifest/manifest_meta.xml
+        device/mediatek/vendor/common/project_manifest/manifest_log.xml
+        device/mediatek/vendor/common/project_manifest/manifest_mdmonitor.xml
+        device/mediatek/vendor/common/project_manifest/manifest_aee.xml
+        device/mediatek/vendor/common/project_manifest/manifest_pq.xml
+        device/mediatek/vendor/common/project_manifest/manifest_mmservice.xml
+        device/mediatek/vendor/common/project_manifest/manifest_mmagent.xml
+        device/mediatek/common/project_manifest/manifest_dmc.xml
+        device/mediatek/common/project_manifest/manifest_apmonitor.xml
+        device/mediatek/vendor/common/project_manifest/manifest_nwk_opt.xml
+        device/mediatek/vendor/common/project_manifest/manifest_composer.xml
+        vendor/samsung/interfaces/tlc/payment/1.0/manifest.xml
+        vendor/samsung/system/security/skeymaster/common/configs/rkp_skeymint_v100_manifest.xml
+        vendor/samsung/system/security/skeymaster/common/configs/gatekeeper_manifest.xml
+        device/mediatek/vendor/common/manifest.xml
+        device/mediatek/vendor/common/manifest_target_level_r.xml
+        vendor/samsung/interfaces/gnss/aidl/aidl_manifest/manifest_gnss_aidl_IGnssV4_ISehGnssV4.xml
+-->
+<manifest version="8.0" type="device" target-level="5">
+    <hal format="hidl" override="true">
+        <name>android.hardware.gatekeeper</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IGatekeeper/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.gnss</name>
+        <version>4</version>
+        <fqname>IGnss/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.config</name>
+        <version>3</version>
+        <fqname>IRadioConfig/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.data</name>
+        <version>3</version>
+        <fqname>IRadioData/slot1</fqname>
+        <fqname>IRadioData/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.ims</name>
+        <version>2</version>
+        <fqname>IRadioIms/slot1</fqname>
+        <fqname>IRadioIms/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.messaging</name>
+        <version>3</version>
+        <fqname>IRadioMessaging/slot1</fqname>
+        <fqname>IRadioMessaging/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.modem</name>
+        <version>3</version>
+        <fqname>IRadioModem/imsSlot1</fqname>
+        <fqname>IRadioModem/imsSlot2</fqname>
+        <fqname>IRadioModem/se1</fqname>
+        <fqname>IRadioModem/se2</fqname>
+        <fqname>IRadioModem/slot1</fqname>
+        <fqname>IRadioModem/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.network</name>
+        <version>3</version>
+        <fqname>IRadioNetwork/imsSlot1</fqname>
+        <fqname>IRadioNetwork/imsSlot2</fqname>
+        <fqname>IRadioNetwork/slot1</fqname>
+        <fqname>IRadioNetwork/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.sap</name>
+        <fqname>ISap/slot1</fqname>
+        <fqname>ISap/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.sim</name>
+        <version>3</version>
+        <fqname>IRadioSim/imsSlot1</fqname>
+        <fqname>IRadioSim/imsSlot2</fqname>
+        <fqname>IRadioSim/se1</fqname>
+        <fqname>IRadioSim/se2</fqname>
+        <fqname>IRadioSim/slot1</fqname>
+        <fqname>IRadioSim/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.voice</name>
+        <version>3</version>
+        <fqname>IRadioVoice/imsSlot1</fqname>
+        <fqname>IRadioVoice/imsSlot2</fqname>
+        <fqname>IRadioVoice/slot1</fqname>
+        <fqname>IRadioVoice/slot2</fqname>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>android.hardware.security.keymint</name>
+        <fqname>IKeyMintDevice/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.security.keymint</name>
+        <fqname>IRemotelyProvisionedComponent/default</fqname>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>android.hardware.security.secureclock</name>
+        <fqname>ISecureClock/default</fqname>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>android.hardware.security.sharedsecret</name>
+        <fqname>ISharedSecret/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.soundtrigger3</name>
+        <version>2</version>
+        <fqname>ISoundTriggerHw/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.aee</name>
+        <fqname>IAee/AEE</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.apmonitor</name>
+        <fqname>IApmService/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.atci</name>
+        <fqname>IAtcid/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.audio</name>
+        <fqname>IMtkAudio/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.camera.isphal</name>
+        <fqname>IISPModule/internal/1</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.composer_ext</name>
+        <fqname>IComposerExt/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.dmc</name>
+        <fqname>IDmcService/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.log</name>
+        <fqname>ILog/ATMWiFiHidlServer</fqname>
+        <fqname>ILog/ConnsysFWHidlServer</fqname>
+        <fqname>ILog/LoggerHidlServer</fqname>
+        <fqname>ILog/MobileLogHidlServer</fqname>
+        <fqname>ILog/ModemLogHidlServer</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mdmonitor</name>
+        <fqname>IMDMonitorService/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.meta</name>
+        <fqname>IMetaTst/MetaATDHidlServer</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mmagent</name>
+        <fqname>IMMAgent/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mms</name>
+        <fqname>IMms/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.data</name>
+        <version>3</version>
+        <fqname>IMtkRadioExData/slot1</fqname>
+        <fqname>IMtkRadioExData/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.dch</name>
+        <version>2</version>
+        <fqname>IMtkRadioExDc/slot1</fqname>
+        <fqname>IMtkRadioExDc/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.ims</name>
+        <version>2</version>
+        <fqname>IMtkRadioExIms/slot1</fqname>
+        <fqname>IMtkRadioExIms/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.messaging</name>
+        <fqname>IMtkRadioExMessaging/slot1</fqname>
+        <fqname>IMtkRadioExMessaging/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.modem</name>
+        <version>3</version>
+        <fqname>IMtkRadioExModem/slot1</fqname>
+        <fqname>IMtkRadioExModem/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.network</name>
+        <fqname>IMtkRadioExNetwork/slot1</fqname>
+        <fqname>IMtkRadioExNetwork/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.rcs</name>
+        <version>2</version>
+        <fqname>IMtkRadioExRcs/slot1</fqname>
+        <fqname>IMtkRadioExRcs/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.sim</name>
+        <version>2</version>
+        <fqname>IMtkRadioExSim/slot1</fqname>
+        <fqname>IMtkRadioExSim/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.voice</name>
+        <fqname>IMtkRadioExVoice/slot1</fqname>
+        <fqname>IMtkRadioExVoice/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.nvram</name>
+        <fqname>INvram/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.nwk_opt_new</name>
+        <fqname>INwkOptNew/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.pq_aidl</name>
+        <version>7</version>
+        <fqname>IPictureQuality_AIDL/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.gnss</name>
+        <version>4</version>
+        <fqname>ISehGnss/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.keymint</name>
+        <fqname>ISehKeyMintExtension/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.keymint</name>
+        <fqname>ISehKeyMintFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.tlc.payment</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ISehTlcPayment/default</fqname>
+    </hal>
+    <sepolicy>
+        <version>202404</version>
+    </sepolicy>
+    <kernel target-level="5"/>
+</manifest>

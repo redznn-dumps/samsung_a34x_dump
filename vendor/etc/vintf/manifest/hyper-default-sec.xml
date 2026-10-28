@@ -1,0 +1,11 @@
+<!--
+    Input:
+        vendor/samsung/hal-server/hyper/aidl/default/hyper-default-sec.xml
+-->
+<manifest version="8.0" type="device">
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.hyper</name>
+        <version>2</version>
+        <fqname>ISehHyPer/default</fqname>
+    </hal>
+</manifest>
