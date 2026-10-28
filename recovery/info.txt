@@ -1,0 +1,14 @@
+kernel: kernel
+dtb: dtb/
+ramdisk: ramdisk/
+header version: 2
+os_version: 15.0.0
+os_patch_level: 2026-04
+pagesize: 4096
+base: 0x40078000
+kernel_offset: 0x00008000
+ramdisk_offset: 0x11088000
+tags_offset: 0x07c08000
+dtb_offset: 0x67bbff88000
+board: 'SRPVK25A015'
+cmdline: 'bootopt=64S3,32N2,64N2 loop.max_part=7'
