@@ -1,0 +1,11 @@
+dtb: dtb/
+ramdisk: ramdisk/
+header version: 4
+pagesize: 4096
+base: 0x40078000
+kernel_offset: 0x00008000
+ramdisk_offset: 0x11088000
+tags_offset: 0x07c08000
+dtb_offset: 0x07c08000
+vendor_cmdline: 'bootopt=64S3,32N2,64N2 loop.max_part=7'
+board: 'SRPVK25A015'
