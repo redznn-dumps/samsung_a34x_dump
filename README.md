@@ -1,0 +1,20 @@
+## a34xub-user 16 BP2A.250605.031.A3 A346MUBSFEZC7 release-keys
+- Manufacturer: samsung
+- Platform: mt6877
+- Codename: a34x
+- Brand: samsung
+- Flavor: a34xub-user
+- Release Version: 16
+- Kernel Version: 6.6.82
+- Id: BP2A.250605.031.A3
+- Incremental: A346MUBSFEZC7
+- Tags: release-keys
+- CPU Abilist: arm64-v8a,armeabi-v7a,armeabi
+- A/B Device: false
+- Treble Device: true
+- Locale: en-GB
+- Screen Density: 450
+- Fingerprint: samsung/a34xub/a34x:15/AP3A.240905.015.A2/A346MUBSFEZC7:user/release-keys
+- OTA version: 
+- Branch: a34xub-user-16-BP2A.250605.031.A3-A346MUBSFEZC7-release-keys
+- Repo: samsung_a34x_dump
